@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   zookeeper:
-    image: debezium/zookeeper:1.4
+    image: quay.io/debezium/zookeeper:1.9
     ports:
       - 2181:2181
       - 2888:2888
@@ -10,7 +10,7 @@ services:
       - TZ=Asia/Bangkok
 
   kafka:
-    image: debezium/kafka:1.4
+    image: quay.io/debezium/kafka:1.9
     ports:
       - 9092:9092
     depends_on:
@@ -21,7 +21,7 @@ services:
       - KAFKA_BROKER=kafka:9092
 
   connect:
-    image: debezium/connect:1.4
+    image: quay.io/debezium/connect:1.9
     restart: always
     ports:
       - 8083:8083
