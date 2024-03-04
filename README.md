@@ -9,7 +9,7 @@ Change Data Capture with Debezium and Kafka based on Docker
 1. Clone this repository anywhere on your machine:
    
   ```sh
-  $ get clone https://github.com/snlangsuan/demo-cdc-debezium-kafka.git
+  $ git clone https://github.com/snlangsuan/demo-cdc-debezium-kafka.git
   ```
 
 2. Run docker compose build
